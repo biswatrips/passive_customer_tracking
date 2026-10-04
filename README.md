@@ -67,16 +67,17 @@ Install system libraries required for Bluetooth and serial communication:
 
 ### Step 4: Python Dependencies & Execution
 
-1. Install requirements from requirements.txt:
-   ```bash
-   pip install -r requirements.txt
-2. Execute the tracker script:
-   ```bash
-   python3 zone_node_tracker.py
+ 1. Install requirements from requirements.txt:
+     ```bash
+    pip install -r requirements.txt
+
+ 2. Execute the tracker script:
+     ```bash
+    python3 zone_node_tracker.py
 
 ---
 
-Database Schema Reference
+### Database Schema Reference
 The application automatically manages retail_analytics.db with SQLite WAL mode:
 
 telemetry_logs (Raw 2-second interval logs): Tracks timestamp, presence, mmWave distance, BLE density, and RSSI.
