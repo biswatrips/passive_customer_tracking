@@ -89,3 +89,10 @@ The application automatically manages retail_analytics.db with SQLite WAL mode:
 telemetry_logs (Raw 2-second interval logs): Tracks timestamp, presence, mmWave distance, BLE density, and RSSI.
 
 bay_probabilities (2-minute rolling analytics batches): Tracks engagement categories (Focused Single Browsing, Crowded Engagement, Low-Intent Traffic), probability scores, and estimated dwell times.
+
+---
+
+### Sample videos
+
+[![Watch the video](https://www.youtube.com/watch?v=JR2T59NamYg)]
+[![Watch the video](https://www.youtube.com/watch?v=dFT4IHpG5VI)]
