@@ -37,7 +37,10 @@ Connect the HLK-LD2410C radar module to your Raspberry Pi's GPIO header using th
 | **RX** | Pin 8 (GPIO 14 / TXD) | Radar Receive $\leftarrow$ Pi Transmit |
 
 > *Note: Ensure your Pi and radar share a common ground.*
-![HLK-LD2410C pin diagram](mmwave_pin_diagram.jpeg)
+
+---
+
+![HLK-LD2410C pin diagram](mmwave_ping_diagram.jpeg)
 ![HLK-LD2410C pin wiring](mmwave_pin.jpeg)
 ![HLK-LD2410C pin gpio connection](gpio_pin_connection.jpeg)
 
