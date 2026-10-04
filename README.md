@@ -94,5 +94,5 @@ bay_probabilities (2-minute rolling analytics batches): Tracks engagement catego
 
 ### Sample videos
 
-[Watch the Video on YouTube](https://www.youtube.com/watch?v=JR2T59NamYg)
-[Watch the Video on YouTube](https://www.youtube.com/watch?v=dFT4IHpG5VI)
+1. [Watch the Video on YouTube](https://www.youtube.com/watch?v=JR2T59NamYg)
+2. [Watch the Video on YouTube](https://www.youtube.com/watch?v=dFT4IHpG5VI)
