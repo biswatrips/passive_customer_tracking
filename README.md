@@ -62,7 +62,7 @@ Install system libraries required for Bluetooth and serial communication:
   ```bash
   sudo apt-get update
   sudo apt-get install -y python3-pip python3-venv libglib2.0-dev bluetooth bluez
-
+  ```
 ---
 
 ### Step 4: Python Dependencies & Execution
