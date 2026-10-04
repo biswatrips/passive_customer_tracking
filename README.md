@@ -59,9 +59,9 @@ Free up the hardware serial port from login shell/Bluetooth use:
 ### Step 3: Install System Dependencies
 Install system libraries required for Bluetooth and serial communication:
 
-```bash
-sudo apt-get update
-sudo apt-get install -y python3-pip python3-venv libglib2.0-dev bluetooth bluez
+  ```bash
+  sudo apt-get update
+  sudo apt-get install -y python3-pip python3-venv libglib2.0-dev bluetooth bluez
 
 ---
 
