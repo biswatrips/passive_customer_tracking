@@ -46,3 +46,39 @@ Free up the hardware serial port from login shell/Bluetooth use:
 1. Open the configuration tool in your terminal:
    ```bash
    sudo raspi-config
+2. Use the arrow keys to navigate to Interface Options (or Interfacing Options depending on your OS version) and press Enter.
+3. Select I6 Serial Port (or Serial).
+4. Answer the prompt: "Would you like a login shell to be accessible over serial?" $\rightarrow$ Select No.
+5. Answer the prompt: "Would you like the serial port hardware to be enabled?" $\rightarrow$ Select Yes.
+6. Exit raspi-config and reboot your Raspberry Pi to apply changes:
+   ```bash
+   sudo reboot
+
+---
+
+### Step 3: Install System Dependencies
+Install system libraries required for Bluetooth and serial communication:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y python3-pip python3-venv libglib2.0-dev bluetooth bluez
+
+---
+
+### Step 4: Python Dependencies & Execution
+
+1. Install requirements from requirements.txt:
+   ```bash
+   pip install -r requirements.txt
+2. Execute the tracker script:
+   ```bash
+   python3 zone_node_tracker.py
+
+---
+
+Database Schema Reference
+The application automatically manages retail_analytics.db with SQLite WAL mode:
+
+telemetry_logs (Raw 2-second interval logs): Tracks timestamp, presence, mmWave distance, BLE density, and RSSI.
+
+bay_probabilities (2-minute rolling analytics batches): Tracks engagement categories (Focused Single Browsing, Crowded Engagement, Low-Intent Traffic), probability scores, and estimated dwell times.
